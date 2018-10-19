@@ -1,10 +1,31 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tp-Oc';
+
+    posts = [
+        {
+            title: 'Mon premier post',
+            content: 'Lorem ipsum',
+            loveIts: 0,
+            created_at: new Date()
+        },
+        {
+            title: 'Mon deuxième post',
+            content: 'Lorem ipsum',
+            loveIts: 0,
+            created_at: new Date()
+        },
+        {
+            title: 'Encore un autre post',
+            content: 'Lorem ipsum',
+            loveIts: 0,
+            created_at: new Date()
+        }
+    ];
+
 }

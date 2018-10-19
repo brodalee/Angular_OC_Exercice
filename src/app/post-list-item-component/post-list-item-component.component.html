@@ -1,0 +1,13 @@
+<div [ngClass]="{'list-group-item': true, 'list-group-item-success': goodRate(), 'list-group-item-danger': badRate()}">
+    <div class="row">
+        <div class="col-xs-5 text-left" [ngStyle]="{'font-size':'30px'}">{{ title }}</div>
+        <div class="col-xs-3"></div>
+        <div class="col-xs-3 text-right">{{ created_at | date: 'short' }}</div>
+        <h5 ></h5>
+    </div>
+    <p>{{ content }}</p>
+    <div class="row">
+        <button class="btn btn-success" (click)="increment()">loveIts</button> 
+        <button class="btn btn-danger" (click)="decrement()">Dont loveIts</button> 
+    </div>
+</div>
